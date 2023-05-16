@@ -1,0 +1,15 @@
+name: action two
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  echo-something-else:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: "echo branch name: $GITHUB_REF_NAME"
+  
+  
+  
